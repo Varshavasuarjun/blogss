@@ -52,7 +52,7 @@ router.post('/signup', async (req,res)=>{
         console.log('success')
         res.json({message:"Registered succussfully"});
     } catch (error) {
-        res.status(404).send('coulnt post');
+        res.json({message:"couldnt post"});
         console.log(error); 
     }
   });
